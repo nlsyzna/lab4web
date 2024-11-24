@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle Color</title>
+    <style>
+        #colorBox {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 20px; /* Adds space below the box */
+        }
+
+        button {
+            margin-top: 10px; /* Optional: Adds space above the button */
+        }
+    </style>
+    <script>
+        function toggleColor() {
+            const colorBox = document.getElementById("colorBox");
+            if (colorBox.style.backgroundColor === "red") {
+                colorBox.style.backgroundColor = "blue";
+            } else {
+                colorBox.style.backgroundColor = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="colorBox"></div>
+    <button onclick="toggleColor()">Toggle Color</button>
+</body>
+</html>
